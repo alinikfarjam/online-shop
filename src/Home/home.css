@@ -1,7 +1,36 @@
 .Home_container {
   margin-left: 8.8vw;
   width: 81vw;
+  margin-bottom: 100px;
 }
 .Home_banner {
   width: 90vw;
+}
+.Home_products {
+  display: grid;
+  /* grid-template-rows: ma; */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  column-gap: 64px;
+  row-gap: 60px;
+  /* background-color: chocolate; */
+}
+.Home_container_title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.Home_title {
+  font-size: 18px;
+  font-weight: 600;
+  width: 85px;
+}
+.Home_title_line {
+  width: 70vw;
+  height: 1px;
+  background-color: black;
+  margin-left: 20px;
+  border-radius: 20px;
 }

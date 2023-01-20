@@ -1,0 +1,128 @@
+.Detail_container {
+  margin-top: 50px;
+  display: flex;
+  margin-left: 8.8vw;
+  margin-right: 10vw;
+  margin-bottom: 40px;
+}
+.Detail_image {
+  min-width: 300px;
+  height: 340px;
+}
+.Detail_textcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 5vw;
+}
+.Detail_title {
+  font-weight: 600;
+}
+.Detail_textcontainer > p:nth-of-type(4) {
+  font-size: 18px;
+  border: 1px solid #572e94;
+  width: max-content;
+  padding: 7px 16px;
+  border-radius: 15px;
+  background-color: #7e4cca;
+  color: white;
+}
+.Detail_textcontainer > p:nth-of-type(1) {
+  font-size: 18px;
+}
+.Detail_textcontainer > button {
+  height: 30px;
+  background-color: green;
+  border: none;
+  border-radius: 14px;
+  color: white;
+}
+.Detail_inc {
+  /* width: 40px !important; */
+  font-size: 15px;
+  transition: 0.5s all ease-in !important;
+}
+.Detail_Button {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  height: 30px;
+  transition: 0.5s all ease-in;
+}
+.Detail_Button > button {
+  width: 100px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.Detail_Button > button:nth-of-type(1) {
+  background-color: green;
+  color: white;
+  transition: 0.3s all ease-in;
+}
+.Detail_Button > button:nth-of-type(2) {
+  border: 1px solid rgb(50, 50, 50);
+  transition: 0.3s all ease-in;
+}
+.Detail_Button > button:nth-of-type(1):hover {
+  border: 1px solid green;
+  background-color: white;
+  color: black;
+}
+.Detail_Decrase {
+  margin-right: 50px;
+}
+.Detail_Link {
+  color: black;
+  text-decoration: none;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: 0.5s all ease-in;
+}
+.Detail_Link:hover {
+  border: black 1px solid;
+}
+@media screen and (max-width: 747px) and (min-width: 610px) {
+  .Detail_Button {
+    margin-top: 15px;
+    flex-direction: column;
+    height: 80px;
+    justify-content: space-between;
+  }
+  .Detail_Decrase {
+    margin-bottom: 10px;
+  }
+  .Detail_price {
+    margin-top: 10px;
+  }
+  .Detail_Button > button {
+    height: 30px;
+  }
+  .Detail_textcontainer > p:nth-of-type(2) {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 610px) {
+  .Detail_container {
+    margin-top: 50px;
+    display: flex;
+    margin-left: 8.8vw;
+    margin-right: 10vw;
+    margin-bottom: 40px;
+    flex-direction: column;
+    height: 700px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .Detail_image {
+    width: 130px;
+  }
+  .Detail_textcontainer {
+    height: 300px;
+  }
+}

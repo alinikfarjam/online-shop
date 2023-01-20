@@ -1,11 +1,23 @@
 import axios from "axios";
-import { Context, createContext, useState } from "react";
+import { Context, createContext, useEffect, useState } from "react";
 
-const productContext = createContext()
+export const productContext = createContext();
+
 const Contextdata = ({ children }) => {
-    const [product, setProduct] = useState();
-    axios.get("https://fakestoreapi.com/products")
-        .then(res => setProduct(res.data));
+    const [product, setProduct] = useState([]);
+
+    useEffect(() => {
+        const getComment = async () => {
+            try {
+                const res = await axios.get("https://fakestoreapi.com/products");
+                setProduct(res.data);
+            } catch (erorr) {
+                console.log(erorr);
+            }
+
+        }
+        getComment();
+    }, [])
 
     return (
         <productContext.Provider value={product}>
@@ -13,5 +25,4 @@ const Contextdata = ({ children }) => {
         </productContext.Provider>
     );
 }
-
 export default Contextdata;
